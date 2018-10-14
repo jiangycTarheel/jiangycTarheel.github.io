@@ -1,11 +1,237 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
+
 <head>
-  <meta charset="UTF-8">
+  <meta name=viewport content=“width=800”>
+  <meta name="generator" content="HTML Tidy for Linux/x86 (vers 11 February 2007), see www.w3.org">
+  <style type="text/css">
+    /* Color scheme stolen from Sergey Karayev */
+    
+    a {
+      color: #1772d0;
+      text-decoration: none;
+    }
+    
+    a:focus,
+    a:hover {
+      color: #f09228;
+      text-decoration: none;
+    }
+    
+    body,
+    td,
+    th,
+    tr,
+    p,
+    a {
+      font-family: 'Lato', Verdana, Helvetica, sans-serif;
+      font-size: 14px
+    }
+    
+    strong {
+      font-family: 'Lato', Verdana, Helvetica, sans-serif;
+      font-size: 14px;
+    }
+    
+    heading {
+      font-family: 'Lato', Verdana, Helvetica, sans-serif;
+      font-size: 22px;
+    }
+    
+    papertitle {
+      font-family: 'Lato', Verdana, Helvetica, sans-serif;
+      font-size: 14px;
+      font-weight: 700
+    }
+    
+    name {
+      font-family: 'Lato', Verdana, Helvetica, sans-serif;
+      font-size: 32px;
+    }
+
+    img {
+      name: 'YichenJiang_circle';
+      class: 'circle';
+      border-radius: 50%;
+    } 
+    
+    .one {
+      width: 160px;
+      height: 160px;
+      position: relative;
+    }
+    
+    .two {
+      width: 160px;
+      height: 160px;
+      position: absolute;
+      transition: opacity .2s ease-in-out;
+      -moz-transition: opacity .2s ease-in-out;
+      -webkit-transition: opacity .2s ease-in-out;
+    }
+    
+    .fade {
+      transition: opacity .2s ease-in-out;
+      -moz-transition: opacity .2s ease-in-out;
+      -webkit-transition: opacity .2s ease-in-out;
+    }
+    
+    span.highlight {
+      background-color: #ffffd0;
+    }
+  </style>
+  <link rel="icon" type="image/png" href="seal_icon.png">
   <title>Yichen Jiang</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+  <link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
 </head>
+
 <body>
-  <h1>This is Yichen Jiang's home page.</h1>
-  <footer>I am Iron Man.</footer>
+  <table width="800" border="0" align="center" cellspacing="0" cellpadding="0">
+    <tr>
+      <td>
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+          <tr>
+            <td width="67%" valign="middle">
+              <p align="center">
+                <name>Yichen Jiang</name>
+              </p>
+              <p>I am a first year graudate student pursuing M.S. degree at <a href="https://www.cs.unc.edu/">Department of Computer Science</a> at <a href="https://www.unc.edu">University of North Carolina at Chapel Hill</a>, where I work at <a href="http://nlp.cs.unc.edu/"> UNC-NLP </a> Research Group, advised by <a href="https://www.cs.unc.edu/~mbansal/"> Prof. Mohit Bansal</a>. My research focues on Natural Language Processing and structured Deep Learning. In general, we build intuitive and interpretable Neural Network models to tackle some of the most challenging Natural Language Generation (NLG) (e.g., text summarization), and Natural Language Understanding (NLU) (e.g., machine reading-comprehension). We value the interpretability and inspiration conveyed by Neural Architecures/training algorithms more than the actual performance in automatic metrics.
+              </p>
+              
+              <p align=center>
+                <a href="mailto:yichenj@cs.unc.edu">Email</a> &nbsp/&nbsp
+                <a href="YichenJiang_resume.pdf">Resume</a> &nbsp/&nbsp
+                <a href="https://github.com/jiangycTarheel">Github</a> &nbsp/&nbsp
+                <a href="http://www.linkedin.com/in/yichen-jiang-943355121/"> LinkedIn </a>
+              </p>
+            </td>
+            <td width="33%">
+              <img src="YichenJiang_circle.png", name="YichenJiang_circle", class="circle", style="width:300px">
+            </td>
+          </tr>
+        </table>
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+          <tr>
+            <td width="100%" valign="middle">
+              <heading>Research</heading>
+              <p>
+                I'm interested in natural language processing, computer vision, multi-modal system, machine learning, statistics, optimization. My research interest centers on building interpretable neural networks that achieves state-of-the-art performace in tasks related to human language. 
+              </p>
+            </td>
+          </tr>
+        </table>
+
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+
+          <tr onmouseout="portrait_stop()" onmouseover="portrait_start()">
+            <td width="25%">
+              <div class="one">
+                <div class="two" id='portrait_image'><img src='2dec.png', style="width:180px"></div>
+                <img src='2dec.png', style="width:180px">
+              </div>
+              <script type="text/javascript">
+                function portrait_start() {
+                  document.getElementById('portrait_image').style.opacity = "1";
+                }
+
+                function portrait_stop() {
+                  document.getElementById('portrait_image').style.opacity = "0";
+                }
+                portrait_stop()
+              </script>
+            </td>
+            <td valign="top" width="75%">
+              <!-- <a href="https://drive.google.com/file/d/13i6DlS9UhGVKmwslLUFnKBwdxFRVQeQj/view?usp=sharing"> -->
+                <papertitle>Closed-book Training to Improve Summarization Encoder Memory</papertitle>
+              </a>
+              <br>
+              <strong>Yichen Jiang</strong>, <a href="https://www.cs.unc.edu/~mbansal/">Mohit Bansal,
+              <br>
+              <em>EMNLP</em>, 2018
+              <br>
+              <a href="https://arxiv.org/abs/1809.04585">arxiv</a> /
+<!--               <a href="https://ai.googleblog.com/2017/10/portrait-mode-on-pixel-2-and-pixel-2-xl.html">blog post</a> /
+ -->              
+              <a href="closed-book2018.bib">bibtex</a>
+              <!-- <p>"Closed-book" decoder without attention or pointer mechanism can improve the representation power of the final memory state of the encoder in a pointer-generator seq-attention-seq model.</p>
+              <p>This is important for model to generate salient summaries because the encoder is able to encode salient information from the source article and ignore other trivial information.</p> -->
+            </td>
+          </tr>
+        </table>
+       <!--  <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+          <tr>
+            <td>
+              <heading>Course Projects</heading>
+            </td>
+          </tr>
+        </table>
+        <table width="100%" align="center" border="0" cellpadding="20">
+          <tr>
+            <td width="25%"><img src="prl.jpg" alt="prl" width="160" height="160"></td>
+            <td width="75%" valign="top">
+              <p>
+                <a href="https://drive.google.com/file/d/13rVuJpcytRdLYCnKpq46g7B7IzSrPQ2P/view?usp=sharing">
+                  <papertitle>Parallelizing Reinforcement Learning</papertitle>
+                </a>
+                <br>
+                <strong>Jonathan T. Barron</strong>, <a href="http://www.eecs.berkeley.edu/~dsg/">Dave Golland</a>, <a href="http://www.cs.berkeley.edu/~nickjhay/">Nicholas J. Hay</a>, 2009
+                <p>
+                  <br> Markov Decision Problems which lie in a low-dimensional latent space can be decomposed, allowing modified RL algorithms to run orders of magnitude faster in parallel.
+                </p>
+              </p>
+            </td>
+          </tr>
+        </table>
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+          <tr>
+            <td>
+              <heading>Teaching</heading>
+            </td>
+          </tr>
+        </table>
+        <table width="100%" align="center" border="0" cellpadding="20">
+          <tr>
+            <td width="25%"><img src="pacman.jpg" alt="pacman" width="160" height="160"></td>
+            <td width="75%" valign="center">
+              <p>
+                <a href="http://inst.eecs.berkeley.edu/~cs188/fa10/announcements.html">
+                  <papertitle>CS188 - Fall 2010 (GSI)</papertitle>
+                </a>
+                <br>
+                <br>
+                <a href="http://inst.eecs.berkeley.edu/~cs188/sp11/announcements.html">
+                  <papertitle>CS188 - Spring 2011 (GSI)</papertitle>
+                </a>
+                <br>
+              </p>
+            </td>
+          </tr>
+        </table> -->
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+          <tr>
+            <td>
+              <br>
+              <p align="right">
+                <font size="2">
+                  <a href="https://jonbarron.info/">Thanks for providing the template source code for this website </a>
+              </p>
+            </td>
+          </tr>
+        </table>
+        <script type="text/javascript">
+          var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+          document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+        </script>
+        <script type="text/javascript">
+          try {
+            var pageTracker = _gat._getTracker("UA-7580334-1");
+            pageTracker._trackPageview();
+          } catch (err) {}
+        </script>
+        </td>
+    </tr>
+  </table>
 </body>
+
 </html>
