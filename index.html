@@ -126,7 +126,7 @@
           <tr onmouseout="portrait_stop()" onmouseover="portrait_start()">
             <td width="25%">
               <div class="one">
-                <div class="two" id='portrait_image'><img src='2dec.png', style="width:180px"></div>
+                <div class="two" id='portrait_image'><img src='adv-gen.png', style="width:180px"></div>
                 <img src='2dec.png', style="width:180px">
               </div>
               <script type="text/javascript">
@@ -147,12 +147,47 @@
               <br>
               <strong>Yichen Jiang</strong>, <a href="https://www.cs.unc.edu/~mbansal/">Mohit Bansal</a>
               <br>
-              <em>Proceedings of <a href="http://emnlp2018.org/">ACL</a> 2019, Florence, Italy</em>, 
+              <em>To appear in the Proceedings of <a href="http://www.acl2019.org/EN/index.xhtml">ACL</a> 2019, Florence, Italy</em>, 
               <br>
               <a href="https://arxiv.org/abs/1809.04585">arxiv</a> /
 <!--               <a href="https://ai.googleblog.com/2017/10/portrait-mode-on-pixel-2-and-pixel-2-xl.html">blog post</a> /
  -->              
               <a href="adv-hotpot2019.bib">bibtex</a>
+              <!-- <p>"Closed-book" decoder without attention or pointer mechanism can improve the representation power of the final memory state of the encoder in a pointer-generator seq-attention-seq model.</p>
+              <p>This is important for model to generate salient summaries because the encoder is able to encode salient information from the source article and ignore other trivial information.</p> -->
+            </td>
+          </tr>
+
+          <tr onmouseout="portrait_stop()" onmouseover="portrait_start()">
+            <td width="25%">
+              <div class="one">
+                <div class="two" id='portrait_image'><img src='epar.png', style="width:180px"></div>
+                <img src='2dec.png', style="width:180px">
+              </div>
+              <script type="text/javascript">
+                function portrait_start() {
+                  document.getElementById('portrait_image').style.opacity = "1";
+                }
+
+                function portrait_stop() {
+                  document.getElementById('portrait_image').style.opacity = "0";
+                }
+                portrait_stop()
+              </script>
+            </td>
+            <td valign="top" width="75%">
+              <!-- <a href="https://drive.google.com/file/d/13i6DlS9UhGVKmwslLUFnKBwdxFRVQeQj/view?usp=sharing"> -->
+                <papertitle>Explore, Propose, and Assemble: An Interpretable Model for Multi-Hop Reading Comprehension</papertitle>
+              </a>
+              <br>
+              <strong>Yichen Jiang*</strong>, Nitish Joshi*, Yen-chun Chen, and <a href="https://www.cs.unc.edu/~mbansal/">Mohit Bansal</a>
+              <br>
+              <em>To appear in the Proceedings of <a href="http://www.acl2019.org/EN/index.xhtml">ACL</a> 2019, Florence, Italy</em>, 
+              <br>
+              <a href="https://arxiv.org/abs/1809.04585">arxiv</a> /
+<!--               <a href="https://ai.googleblog.com/2017/10/portrait-mode-on-pixel-2-and-pixel-2-xl.html">blog post</a> /
+ -->              
+              <a href="epar2019.bib">bibtex</a>
               <!-- <p>"Closed-book" decoder without attention or pointer mechanism can improve the representation power of the final memory state of the encoder in a pointer-generator seq-attention-seq model.</p>
               <p>This is important for model to generate salient summaries because the encoder is able to encode salient information from the source article and ignore other trivial information.</p> -->
             </td>
