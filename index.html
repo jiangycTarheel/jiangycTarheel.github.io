@@ -194,6 +194,38 @@
           <tr onmouseout="portrait_stop()" onmouseover="portrait_start()">
             <td width="25%">
               <div class="one">
+                <div class="two" id='portrait_image'><img src='white.png', style="width:180px"></div>
+                <img src='white.png', style="width:180px">
+              </div>
+              <script type="text/javascript">
+                function portrait_start() {
+                  document.getElementById('portrait_image').style.opacity = "1";
+                }
+
+                function portrait_stop() {
+                  document.getElementById('portrait_image').style.opacity = "0";
+                }
+                portrait_stop()
+              </script>
+            </td>
+            <td valign="top" width="75%">
+              <!-- <a href="https://drive.google.com/file/d/13i6DlS9UhGVKmwslLUFnKBwdxFRVQeQj/view?usp=sharing"> -->
+                <papertitle>Structural Biases for Improving Transformers on Translation into Morphologically Rich Languages</papertitle>
+              </a>
+              <br>
+              Paul Soulos, Sudha Rao, Caitlin Smith, Eric Rosen, Asli Celikyilmaz, R. Thomas McCoy, <strong>Yichen Jiang</strong>, Coleman Haley, Roland Fernandez, Hamid Palangi, Jianfeng Gao, Paul Smolensky
+              <br>
+              <em>Proceedings of the 4th Workshop on Technologies for MT of Low Resource Languages (LoResMT2021)</a></em> 
+              <br>
+              <!-- <a href="https://arxiv.org/abs/2109.15256">arxiv</a> /
+              <a href="https://github.com/jiangycTarheel/compositional-auxseq">code</a> /      -->        
+<!--               <a href="tpt-2021.bib">bibtex</a>
+ -->            </td>
+          </tr>
+
+          <tr onmouseout="portrait_stop()" onmouseover="portrait_start()">
+            <td width="25%">
+              <div class="one">
                 <div class="two" id='portrait_image'><img src='TPT-Summ.png', style="width:180px"></div>
                 <img src='TPT-Summ.png', style="width:180px">
               </div>
