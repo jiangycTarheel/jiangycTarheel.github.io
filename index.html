@@ -126,6 +126,36 @@
         </table>
 
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+          <tr onmouseout="portrait_stop()" onmouseover="portrait_start()">
+            <td width="25%">
+              <div class="one">
+                <div class="two" id='portrait_image'><img src='white.png', style="width:180px"></div>
+                <img src='white.png', style="width:180px">
+              </div>
+              <script type="text/javascript">
+                function portrait_start() {
+                  document.getElementById('portrait_image').style.opacity = "1";
+                }
+
+                function portrait_stop() {
+                  document.getElementById('portrait_image').style.opacity = "0";
+                }
+                portrait_stop()
+              </script>
+            </td>
+            <td valign="top" width="75%">
+              <!-- <a href="https://drive.google.com/file/d/13i6DlS9UhGVKmwslLUFnKBwdxFRVQeQj/view?usp=sharing"> -->
+                <papertitle>Inducing Systematicity in Transformers by Attending to Structurally Quantized Embeddings</papertitle>
+              </a>
+              <br>
+              <strong>Yichen Jiang</strong>, Xiang Zhou, and <a href="https://www.cs.unc.edu/~mbansal/">Mohit Bansal</a>,
+              <br>
+              <em>Preprint</a></em> 
+              <br>
+              <a href="https://arxiv.org/abs/2402.06492">arxiv</a> /
+              <a href="https://github.com/jiangycTarheel/SQ-Transformer">code</a>         
+            </td>
+          </tr>
 
           <tr onmouseout="portrait_stop()" onmouseover="portrait_start()">
             <td width="25%">
